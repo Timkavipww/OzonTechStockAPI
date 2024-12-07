@@ -14,6 +14,11 @@ app.MapGet("/api", () => Results.Redirect("/swagger"));
 app.MapGet("/web", () => Results.Redirect("/swagger"));
 
 app.Run();
+<<<<<<< HEAD
 
 //TEST BRANCH
 //NO ./ADDasd
+=======
+//MERGE
+//TEST BRANCH
+>>>>>>> testbranch
