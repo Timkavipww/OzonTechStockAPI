@@ -1,4 +1,5 @@
 using Ozon.Edu.StockAPI.DependencyInjections;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddServices(builder.Configuration);
@@ -13,3 +14,6 @@ app.MapGet("/api", () => Results.Redirect("/swagger"));
 app.MapGet("/web", () => Results.Redirect("/swagger"));
 
 app.Run();
+
+//TEST BRANCH
+//NO ./ADDasd
