@@ -1,0 +1,24 @@
+syntax = "proto3";
+option csharp_namespace = "Ozon.Edu.StockAPI.Grpc";
+package StockAPI;
+
+import "google/protobuf/empty.proto";
+
+service StockAPIGrpc {
+	rpc GetAllStockItems(GetAllStockItemsRequest) returns (GetAllStockItemsResponse);
+	rpc GetAllStockItemsV2(google.protobuf.Empty) returns (GetAllStockItemsResponse);
+	
+}
+
+message GetAllStockItemsRequest {
+
+}
+message GetAllStockItemsResponse {
+	repeated GetAllStockItemsResponseUnit stocks = 1;
+}
+
+message GetAllStockItemsResponseUnit {
+	int64 item_id = 1;
+	string item_name = 2;
+	int32 quantity = 3;
+}
