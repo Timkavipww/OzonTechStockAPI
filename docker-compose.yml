@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  stockapi:
+    image: stockapi
+    hostname: stock_api
+    ports:
+    - "8080:80"
+  redis:
+    image: redis
+    hostname: redis

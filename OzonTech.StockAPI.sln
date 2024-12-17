@@ -16,10 +16,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{690534C4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{7C15F985-CE08-4FFB-A3F6-9AE02B1BA121}"
 	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.Edu.StockAPI", "Ozon.Edu.StockAPI\Ozon.Edu.StockAPI.csproj", "{E0F9E718-1CAE-4E5A-9FED-E47C3DA67427}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ozon.Edu.StockAPI", "Ozon.Edu.StockAPI\Ozon.Edu.StockAPI.csproj", "{E0F9E718-1CAE-4E5A-9FED-E47C3DA67427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.Edu.StockAPI.Grpc", "Grpc\Ozon.Edu.StockAPI.Grpc.csproj", "{F4F306BA-0A01-4392-87ED-37F13499BAC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ozon.Edu.StockAPI.GrpcClient", "Ozon.Edu.StockAPI.GrpcClient\Ozon.Edu.StockAPI.GrpcClient.csproj", "{C5847936-6B13-4DFA-ACD5-F0E1B1DAA103}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,12 +36,22 @@ Global
 		{E0F9E718-1CAE-4E5A-9FED-E47C3DA67427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0F9E718-1CAE-4E5A-9FED-E47C3DA67427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0F9E718-1CAE-4E5A-9FED-E47C3DA67427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F306BA-0A01-4392-87ED-37F13499BAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F306BA-0A01-4392-87ED-37F13499BAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F306BA-0A01-4392-87ED-37F13499BAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F306BA-0A01-4392-87ED-37F13499BAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5847936-6B13-4DFA-ACD5-F0E1B1DAA103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5847936-6B13-4DFA-ACD5-F0E1B1DAA103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5847936-6B13-4DFA-ACD5-F0E1B1DAA103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5847936-6B13-4DFA-ACD5-F0E1B1DAA103}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E0F9E718-1CAE-4E5A-9FED-E47C3DA67427} = {7A962119-1EDA-4720-A665-1E5066007D57}
+		{F4F306BA-0A01-4392-87ED-37F13499BAC2} = {7A962119-1EDA-4720-A665-1E5066007D57}
+		{C5847936-6B13-4DFA-ACD5-F0E1B1DAA103} = {7A962119-1EDA-4720-A665-1E5066007D57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {556A1984-9E3D-4333-9300-F5A920B0724C}
